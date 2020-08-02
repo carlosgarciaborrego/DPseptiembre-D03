@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	<bean name="challenge1" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Reto 1" />
+		<property name="deadline" value="2020/05/31 23:59"/>
+		<property name="description" value="Descripción del reto 1" />
+		<property name="goalRookie" value="Consigue la bandera" />
+		<property name="rewardRookie">
+			<ref bean="money1" />
+		</property>
+		<property name="goalAverage" value="Consigue derrotar al equipo enemigo" />
+		<property name="rewardAverage">
+			<ref bean="money2" />
+		</property>
+		<property name="goalExpert" value="Gana sin sufrir bajas en tu equipo" />
+		<property name="rewardExpert">
+			<ref bean="money3" />
+		</property>
+	</bean>
+	
+	<bean name="challenge2" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Reto 2" />
+		<property name="deadline" value="2020/11/31 23:59"/>
+		<property name="description" value="Descripción del reto 2" />
+		<property name="goalRookie" value="Anota 10 puntos" />
+		<property name="rewardRookie">
+			<ref bean="money4" />
+		</property>
+		<property name="goalAverage" value="Anota 25 puntos" />
+		<property name="rewardAverage">
+			<ref bean="money5" />
+		</property>
+		<property name="goalExpert" value="Anota 50 puntos" />
+		<property name="rewardExpert">
+			<ref bean="money6" />
+		</property>
+	</bean>
+	
+	<bean name="inquiry1" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="investigación 1"/>
+		<property name="creation" value="2020/04/15 10:30"/>
+		<property name="deadline" value="2020/12/31 23:59"/>
+		<property name="paragraphs" value="Puesto es la descripción de la investigación 1. Espero que la disfruten."/>
+		<property name="minPrice">
+			<ref bean="money7" />
+		</property>
+		<property name="maxPrice">
+			<ref bean="money8" />
+		</property>
+		<property name="email" value="invest1@gmail.com"/>
+	</bean>
+	
+	<bean name="inquiry2" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="investigación 2"/>
+		<property name="creation" value="2020/02/15 15:30"/>
+		<property name="deadline" value="2020/04/01 13:50"/>
+		<property name="paragraphs" value="Puesto es la descripción de la investigación 2."/>
+		<property name="minPrice">
+			<ref bean="money9" />
+		</property>
+		<property name="maxPrice">
+			<ref bean="money10" />
+		</property>
+		<property name="email" value="invest2@gmail.com"/>
+	</bean>
+	
+	<bean name="notice1" class="acme.entities.notices.Notice">
+		<property name="picture" value="Youtube" />
+		<property name="title" value="Noticia 1" />
+		<property name="creation" value="2020/03/11 17:20" />
+		<property name="deadline" value="2020/04/11 17:19" />	
+		<property name="body" value="Noticia de Youtube" />
+		<property name="links" value="https://www.youtube.com" />
+	</bean>
+	
+	<bean name="notice2" class="acme.entities.notices.Notice">
+		<property name="picture" value="NBA" />
+		<property name="title" value="Noticia 2" />
+		<property name="creation" value="2020/04/11 12:20" />
+		<property name="deadline" value="2020/11/10 11:19" />	
+		<property name="body" value="Noticia de NBA" />
+		<property name="links" value="https://www.nba.com" />
+	</bean>
+	
+	<bean name="notice3" class="acme.entities.notices.Notice">
+		<property name="picture" value="marca" />
+		<property name="title" value="Noticia 3" />
+		<property name="creation" value="2020/02/10 19:50" />
+		<property name="deadline" value="2020/12/10 08:10" />	
+		<property name="body" value="Noticia de marca" />
+		<property name="links" value="https://www.marca.com" />
+	</bean>
+	
+	<bean name="overture1" class="acme.entities.overtures.Overture">
+		<property name="title" value="Propuesta 1"/>
+		<property name="creation" value="2020/05/15 15:30"/>
+		<property name="deadline" value="2020/06/01 13:50"/>
+		<property name="paragraphs" value="Descripción de la propuesta 1."/>
+		<property name="minPrice">
+			<ref bean="money11" />
+		</property>
+		<property name="maxPrice">
+			<ref bean="money12" />
+		</property>
+		<property name="email" value="over1@gmail.com"/>
+	</bean>
+	
+	<bean name="overture2" class="acme.entities.overtures.Overture">
+		<property name="title" value="propuesta 2"/>
+		<property name="creation" value="2020/07/25 10:30"/>
+		<property name="deadline" value="2020/11/10 11:50"/>
+		<property name="paragraphs" value="Descripción de la propuesta 2."/>
+		<property name="minPrice">
+			<ref bean="money13" />
+		</property>
+		<property name="maxPrice">
+			<ref bean="money14" />
+		</property>
+		<property name="email" value="over2@gmail.com"/>
+	</bean>
+	
+	<bean name="technologyRecord1" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Registro tecnológico 1" />
+		<property name="activitySector" value="Software" />
+		<property name="inventorName" value="Adam Johnson" />
+		<property name="description" value="Descripcion 1" />
+		<property name="website" value="https://www.logrossoftware.com" />
+		<property name="email" value="adam@gmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="3" />
+	</bean>
+	
+	<bean name="technologyRecord2" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Registro tecnológico 2" />
+		<property name="activitySector" value="Hardware" />
+		<property name="inventorName" value="Fran Antunes" />
+		<property name="description" value="Descripcion 2" />
+		<property name="website" value="https://www.logroshardware.com" />
+		<property name="email" value="fran@gmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="-1" />
+	</bean>
+	
+	<bean name="technologyRecord3" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Registro tecnológico 3" />
+		<property name="activitySector" value="Software" />
+		<property name="inventorName" value="Carlos García" />
+		<property name="description" value="Descripcion 3" />
+		<property name="website" value="https://www.logrossoftware.com" />
+		<property name="email" value="carlos@gmail.com" />
+		<property name="openSource" value="false" />
+		<property name="stars" value="5" />
+	</bean>
+	
+	<bean name="toolRecords1" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Registro herramienta 1" />
+		<property name="activitySector" value="Hardware" />
+		<property name="inventorName" value="Will Smith" />
+		<property name="description" value="Descripcion 1" />
+		<property name="website" value="https://www.logroshardware.com" />
+		<property name="email" value="will@gmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="4" />
+	</bean>
+	
+	<bean name="toolRecords2" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Registro herramienta 2" />
+		<property name="activitySector" value="Software" />
+		<property name="inventorName" value="Pepe Martín" />
+		<property name="description" value="Descripcion 2" />
+		<property name="website" value="https://www.logrossoftware.com" />
+		<property name="email" value="pepe@gmail.com" />
+		<property name="openSource" value="false" />
+		<property name="stars" value="-5" />
+	</bean>
+	
+	<bean name="toolRecords3" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Registro herramienta 3" />
+		<property name="activitySector" value="Software" />
+		<property name="inventorName" value="Ana Gonzalez" />
+		<property name="description" value="Descripcion 3" />
+		<property name="website" value="https://www.logrosoftware.com" />
+		<property name="email" value="ana@gmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="5" />
+	</bean>
+	
+	<bean name="money1" class="acme.framework.datatypes.Money">
+		<property name="amount" value="100.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money2" class="acme.framework.datatypes.Money">
+		<property name="amount" value="200.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money3" class="acme.framework.datatypes.Money">
+		<property name="amount" value="500.00" />
+		<property name="currency" value="€" />
+	</bean>
+		<bean name="money4" class="acme.framework.datatypes.Money">
+		<property name="amount" value="50.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money5" class="acme.framework.datatypes.Money">
+		<property name="amount" value="100.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money6" class="acme.framework.datatypes.Money">
+		<property name="amount" value="200.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money7" class="acme.framework.datatypes.Money">
+		<property name="amount" value="150.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money8" class="acme.framework.datatypes.Money">
+		<property name="amount" value="400.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money9" class="acme.framework.datatypes.Money">
+		<property name="amount" value="800.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money10" class="acme.framework.datatypes.Money">
+		<property name="amount" value="900.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money11" class="acme.framework.datatypes.Money">
+		<property name="amount" value="50.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money12" class="acme.framework.datatypes.Money">
+		<property name="amount" value="220.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money13" class="acme.framework.datatypes.Money">
+		<property name="amount" value="350.00" />
+		<property name="currency" value="€" />
+	</bean>
+	<bean name="money14" class="acme.framework.datatypes.Money">
+		<property name="amount" value="500.00" />
+		<property name="currency" value="€" />
+	</bean>
+</beans>
