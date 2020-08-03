@@ -40,6 +40,18 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.listNotice = Listar Noticias
+master.menu.administrator.createNotice = Crear Noticia
+master.menu.administrator.listInquiry = Listar Investigaciones
+master.menu.administrator.createInquiry = Crear Investigación
+master.menu.administrator.listOverture = Listar Propuestas
+master.menu.administrator.createOverture = Crear Propuesta
+master.menu.administrator.listTechnologyRecord = Listar Registros Tecnológicos
+master.menu.administrator.createTechnologyRecord = Crear Registro Tecnológico
+master.menu.administrator.listToolRecord = Listar Registro Herramientas
+master.menu.administrator.createToolRecord = Crear Registro Herramienta
+master.menu.administrator.listChallenge = Listar Retos
+master.menu.administrator.createChallenge = Crear Reto
+
 
 # master.menu.authenticated ########################################################
 master.menu.authenticated = Autenticado
@@ -88,7 +100,7 @@ master.company.text = \
 	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Incubator, Inc.
 master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

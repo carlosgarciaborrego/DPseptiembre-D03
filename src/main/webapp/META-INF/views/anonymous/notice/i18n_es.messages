@@ -4,6 +4,7 @@ anonymous.notice.form.label.creation = Creación:
 anonymous.notice.form.label.deadline = Fecha límite:
 anonymous.notice.form.label.body = Cuerpo:
 anonymous.notice.form.label.links = Enlaces:
+anonymous.notice.form.label.active = Activo:
 anonymous.notice.form.button.return = Atrás
 
 

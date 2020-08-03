@@ -44,7 +44,7 @@ public class AnonymousNoticeListService implements AbstractListService<Anonymous
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "picture", "title", "creation", "deadline", "body", "links");
+		request.unbind(entity, model, "picture", "title", "creation", "deadline", "body", "active", "links", "active");
 
 	}
 

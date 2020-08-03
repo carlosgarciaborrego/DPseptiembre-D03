@@ -49,7 +49,7 @@ public class Inquiry extends DomainEntity {
 	@Valid
 	private Money				maxPrice;
 
-	@NotNull
+	@NotBlank
 	@Email
 	private String				email;
 }

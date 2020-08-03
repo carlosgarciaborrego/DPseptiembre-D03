@@ -16,7 +16,7 @@ master.banner.background = #FFE97F
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Starter Project! Never before has it bee easier to get your \
+	Welcome to Acme Incubator! Never before has it bee easier to get your \
 	project up and running!
 
 # master.menu #################################################################
@@ -40,6 +40,17 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.listNotice = Notice List
+master.menu.administrator.createNotice = Notice Create
+master.menu.administrator.listInquiry = Inquiry List
+master.menu.administrator.createInquiry = Inquiry Create
+master.menu.administrator.listOverture = Overture List
+master.menu.administrator.createOverture = Overture Create
+master.menu.administrator.listTechnologyRecord = TechnologyRecord List
+master.menu.administrator.createTechnologyRecord = TechnologyRecord Create
+master.menu.administrator.listToolRecord = ToolRecord List
+master.menu.administrator.createToolRecord = ToolRecord Create
+master.menu.administrator.listChallenge = Challenge List
+master.menu.administrator.createChallenge = Challenge Create
 
 # master.menu.authenticated ########################################################
 master.menu.authenticated = Authenticated
@@ -85,10 +96,10 @@ master.footer.label.spanish = Spanish
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. is a fictitious fictitious company that provides a \
+	Acme Incubator, Inc. is a fictitious fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Incubator, Inc.
 master.company.address = Number Street, City, State, Country
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

@@ -4,6 +4,7 @@ anonymous.notice.form.label.creation = Creation:
 anonymous.notice.form.label.deadline = Deadline:
 anonymous.notice.form.label.body = Body:
 anonymous.notice.form.label.links = Links:
+anonymous.notice.form.label.active = Active:
 anonymous.notice.form.button.return = Return
 
 
