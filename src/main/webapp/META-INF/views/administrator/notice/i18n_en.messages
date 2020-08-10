@@ -9,7 +9,8 @@ administrator.notice.form.button.return = Return
 administrator.notice.form.button.create = Create
 administrator.notice.form.button.update = Update
 administrator.notice.form.button.delete = Delete
-
+administrator.notice.deadline = Deadline must be on future.
+administrator.notice.active = Active must be true
 
 administrator.notice.list.label.picture = Picture
 administrator.notice.list.label.title = Title

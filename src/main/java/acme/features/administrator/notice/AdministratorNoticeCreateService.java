@@ -72,14 +72,17 @@ public class AdministratorNoticeCreateService implements AbstractCreateService<A
 			}
 		}
 
-		errors.state(request, isFuture, "deadline", "Deadline must be a date in future ");
+		errors.state(request, isFuture, "deadline", "administrator.notice.deadline");
 
-		if (entity.getActive() != true) {
-			isActive = false;
-		} else {
-			isActive = true;
+		if (entity.getActive() != null) {
+			if (entity.getActive().equals(false)) {
+				isActive = false;
+			} else {
+				isActive = true;
+			}
 		}
-		errors.state(request, isActive, "active", "Active must be true");
+
+		errors.state(request, isActive, "active", "administrator.notice.active");
 
 	}
 

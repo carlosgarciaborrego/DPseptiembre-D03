@@ -11,6 +11,7 @@ administrator.challenge.form.button.return = Return
 administrator.challenge.form.button.create = Crear
 administrator.challenge.form.button.update = Actualizar
 administrator.challenge.form.button.delete = Eliminar
+administrator.challenge.deadline = La fecha límite debe ser de al menos 30 días en el futuro
 
 
 administrator.challenge.list.label.title = Título

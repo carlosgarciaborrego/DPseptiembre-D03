@@ -299,17 +299,17 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>189</x>
+      <x>126</x>
       <y>357</y>
-      <w>231</w>
+      <w>266</w>
       <h>91</h>
     </coordinates>
     <panel_attributes>Notice
 --
-+ picture: String {NotBlank}
++ picture: String {NotBlank, URL}
 + title: String {NotBlank}
 + creation: Date {TemporalType.TIMESTAMP}
-+ deadline: Date {TemporalType.TIMESTAMP}
++ deadline: Date {TemporalType.TIMESTAMP, NotNull}
 + body: String {NotBlank}
 + links: String
 </panel_attributes>
@@ -339,17 +339,17 @@ has v</panel_attributes>
     <coordinates>
       <x>448</x>
       <y>357</y>
-      <w>224</w>
+      <w>266</w>
       <h>105</h>
     </coordinates>
     <panel_attributes>Overture
 --
 + title: String {NotBlank}
 + creation: Date {TemporalType.TIMESTAMP}
-+ deadline: Date {TemporalType.TIMESTAMP}
++ deadline: Date {TemporalType.TIMESTAMP, NotNull}
 + paragraphs: String {NotNull}
 + minPrice: Money {NotNull}
-+ maxPrice: MOney {NotNull}
++ maxPrice: Money {NotNull}
 + email: String {NotBlank, Email}
 </panel_attributes>
     <additional_attributes/>
@@ -368,9 +368,9 @@ has v</panel_attributes>
 + activitySector: String {NotBlank}
 + inspectorName: String {NotBlank}
 + description: String {NotBlank}
-+ website: String {NotBlank}
++ website: String {NotBlank, URL}
 + email: String {NotBlank, Email}
-+ openSource: Boolean {NotNull}
++ openSource: Boolean 
 + starts: int {Range(min= -5, max= 5)} </panel_attributes>
     <additional_attributes/>
   </element>
@@ -384,13 +384,13 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>Tool Record
 --
-+ title: String {NotNull}
++ title: String {NotBlank}
 + activitySector: String {NotBlank}
 + inventorName: String {NotBlank}
 + description: String {NotBlank}
-+ website: String {NotBlank}
++ website: String {NotBlank, URL}
 + email: String {NotBlank}
-+ openSource: Boolean {NotNull}
++ openSource: Boolean 
 + starts: int {Range(min= -5,max= 5)}</panel_attributes>
     <additional_attributes/>
   </element>

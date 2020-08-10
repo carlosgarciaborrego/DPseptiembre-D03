@@ -9,6 +9,8 @@ administrator.notice.form.button.return = Atrás
 administrator.notice.form.button.create = Crear
 administrator.notice.form.button.update = Actualizar
 administrator.notice.form.button.delete = Eliminar
+administrator.notice.deadline = La fecha límite debe estar en el futuro.
+administrator.notice.active = El botón Activo debe ser seleccionado para crear la noticia
 
 
 administrator.notice.list.label.picture = Imagen
